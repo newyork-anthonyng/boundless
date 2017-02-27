@@ -1,6 +1,3 @@
-/**
- * Returns the appropriate vendor-prefixed property for use in programmatic transform style manipulation.
- */
 export default (function detectTransformProperty() {
     const props = [
         'transform',

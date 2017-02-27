@@ -4,7 +4,7 @@ const autoprefixer = require('autoprefixer-stylus');
 const version = require('../package.json').version;
 
 module.exports = {
-    entry: path.resolve(__dirname, '../site/index.js'),
+    entry: ['babel-regenerator-runtime', path.resolve(__dirname, '../site/index.js')],
     output: {
         filename: 'assets/[name].js',
         path: path.resolve(__dirname, '../docs'),
